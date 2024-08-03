@@ -13,11 +13,13 @@
     --highlight-THD: #FDAA7560;
     --highlight-eatxplore: #F9CB4260;
     --highlight-fordscooter:#4297f960;
+    --highlight-ubapp:#72b5fc7c;
     --highlight-thriller: #BB142215;
     --highlight-photos: #1A73E825;
     --highlight-google: #366FF225;
     --highlight-about: #9EEBCF60;
 
+    --ubapp-color:#005BBB;
     --THD-color:#F96302;
     --eatxplore-color:#F9CB42;
     --fordscooter-color: #1A72C4;
@@ -95,6 +97,10 @@ hr {
 
 
 
+.video-feature-title-ubapp {
+  color: var(--ubapp-color) !important;
+}
+
 .video-feature-title-eatxplore {
   color: var(--eatxplore-color) !important;
 }
@@ -147,7 +153,15 @@ hr {
   line-height: 20px !important;
 }
 
+.bg-fordscooter {
+  background: url('../assets/ford-scooter/bg-fordscooter-1.png') no-repeat center center;
+  background-size: cover;
+}
 
+.bg-ubapp {
+  background: url('../assets/ubapp/bg-ubapp.png') no-repeat center center;
+  background-size: cover;
+}
 
 .bg-THD {
   background: url('../assets/THD-jumbotron.jpg') no-repeat center center;
@@ -578,12 +592,20 @@ hr {
   background-image: linear-gradient(to right, transparent 50%, var(--highlight-fordscooter) 50%);
 }
 
+.highlight-ubapp {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-ubapp) 50%);
+}
+
 .highlight-eatxplore.shown {
   background-image: linear-gradient(to right, transparent 50%, var(--highlight-eatxplore) 50%);
 }
 
 .highlight-fordscooter.shown {
   background-image: linear-gradient(to right, transparent 50%, var(--highlight-fordscooter) 50%);
+}
+
+.highlight-ubapp.shown {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-ubapp) 50%);
 }
 
 .highlight-about {
@@ -978,7 +1000,7 @@ i {
   }
 
   .portfolio-title {
-    /* T for Tony, Your T-S: */
+    /* forward-thinking designer */
     font-family: 'Circular Std Black' !important;
     font-size: 2.2vw;
     color: var(--primary-black);
@@ -1316,6 +1338,11 @@ i {
 
     .bg-fordscooter {
     background: url('../assets/ford-scooter/bg-fordscooter-1.png') no-repeat center center;
+    background-size: cover;
+  }
+
+  .bg-ubapp {
+    background: url('../assets/ubapp/bg-ubapp.png') no-repeat center center;
     background-size: cover;
   }
 

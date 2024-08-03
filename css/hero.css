@@ -131,3 +131,29 @@ body {
     background: hsl(var(--hue), 70%, 90%);
     border: 1px solid rgba(0,0,0,0.1);
 }
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 150px; /* tablets */
+    }
+
+    .subtitle {
+        font-size: 24px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 85px; /* mobile */
+    }
+
+    .subtitle {
+        font-size: 18px; 
+    }
+
+    .skill {
+        font-size: 8px; /* Reduce skill font size */
+        padding: 0.3em 0.6em; /* Adjust padding for skills */
+    }
+}
