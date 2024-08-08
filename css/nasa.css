@@ -1,0 +1,262 @@
+
+
+
+/* Card styling */
+.card-s {
+    border: solid #e6e6e6 1.5px;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem; /* Add spacing between rows */
+  }
+
+.card-s-no-hover {
+  border: solid #e6e6e6 1.5px;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem; /* Add spacing between rows */
+}
+  
+  .card-s:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-s-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  .card-s-img-container {
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .card-s-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-s-text {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  
+  .card-s-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: .2rem;
+    color: #111111;
+  }
+  
+  .card-s-desc {
+    line-height: 1.5rem;
+    margin-bottom: .2rem;
+    color: #111111;
+  }
+  
+  .btn-secondary {
+    font-size: 0.875rem;
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    border: solid #555555 1.5px;
+    border-radius: 8px;
+    transition: 250ms;
+    text-decoration: none;
+    color: #111111;
+  }
+  
+  .btn-secondary:hover {
+    color: white;
+    background-color: #555555;
+    transition: 250ms;
+  }
+  
+  .btn-tertiary {
+    align-self: flex-end;
+  }
+  
+  
+  /* new hero */
+  
+  /* Ensure the hero section covers the full viewport height and goes under the navigation */
+  .solution-hero {
+    height: 100vh; /* Full viewport height */
+    width: 100vw;
+  }
+  
+  .solution-hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Full height of the viewport */
+    object-fit: cover; /* Ensures the image covers the section */
+    transition: 0.2s opacity;
+  }
+  
+  .solution-hero-trig {
+    position: absolute;
+    height: 100%;
+    width: 33.33%;
+    z-index: 3;
+  }
+  
+  .solution-hero-trig a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .solution-hero-trig {
+      display: none;
+    }
+    .solution-hero-trig a {
+      display: none;
+    }
+  }
+  
+  .trig-1 {
+    left: 0;
+  }
+  
+  .trig-2 {
+    left: 33.33%;
+  }
+  
+  .trig-3 {
+    right: 0;
+  }
+  
+  .hero-1 {
+    z-index: 1;
+  }
+  
+  .hero-2 {
+    z-index: 2;
+  }
+  
+  .hero-3 {
+    z-index: 0;
+  }
+  
+  .trig-1:hover ~ .hero-2 {
+    opacity: 0;
+  }
+  
+  .trig-3:hover ~ .hero-1,
+  .trig-3:hover ~ .hero-2 {
+    opacity: 0;
+  }
+
+  figcaption {
+    color: #555555;
+    font-style: italic;
+    padding: 8px;
+    text-align: center;
+  }
+
+  /* table section for anomaly */
+
+  .criteria-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    color: #555555;
+  }
+  
+  .criteria-table thead th {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0;
+    text-transform: uppercase;
+    color: #555555;
+  }
+  
+  .criteria-table tbody td {
+    padding: 10px 0;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  
+  .criteria {
+    color: #E4002B;
+  }
+  
+  .urgent {
+    color: #E4002B;
+  }
+  
+  .unanticipated {
+    color: #E4002B;
+  }
+  
+  .unknown {
+    color: #E4002B;
+  }
+
+
+/* dropdown section */
+
+.dropdown-section {
+  margin-top: 20px;
+  border: 1px solid var(--tertiary-black);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+.dropdown-toggle {
+  width: 100%;
+  background-color: #fafafa;
+  color: #555555;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+  background-color: var(--highlight-nasa);
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  margin-top: 10px;
+  padding: 0 10px;
+
+}
+
+.dropdown-content div {
+  margin-bottom: 10px;
+  color: #868686;
+}
+
+.dropdown-index {
+  color: var(--nasa-color);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+/* dropdown arrow */
+.dropdown-content[style*="max-height"] ~ .dropdown-toggle .dropdown-icon {
+  transform: rotate(180deg);
+}
+  

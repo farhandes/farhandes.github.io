@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=false;">
+    <title>NASA</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/logos/farhan_logo.ico">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Stylesheet -->
+    <link rel = "stylesheet" type = "text/css" href = "../../css/style.css" />
+    <link rel = "stylesheet" type = "text/css" href = "../../css/fonts.css" />
+    <link rel = "stylesheet" type = "text/css" href = "../../css/nasa.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../../css/zoom.css" rel="stylesheet">
+    <script src="../../js/transition.js"></script>
+    <script src="../../js/zoom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://use.fontawesome.com/a891bb0a11.js"></script>
+    <script src="../../js/script.js" charset="utf-8"></script>
+
+
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsible-nav">
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../home.html">Farhan Ahmed</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right" id="collapsible-nav">
+        <ul class="nav navbar-nav">
+          <li><a class="selected hvr-underline-from-left" href="../home.html#my-work">Works</a></li>
+          <li><a class="hvr-underline-from-left" href="../../assets/resume/Md_Farhan_Ahmed_Resume (3).pdf" target="_blank">Resume</a></li>
+          <li><a class="hvr-underline-from-left" href="../about-me.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="container-fluid">
+      <div class="row" style="margin-top: 50px">
+        <nav class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+          <div class="bs-docs-sidebar">
+            <ul class="nav nav-stacked"id="sidebar">
+
+              <li>
+                <a href="#overview">Overview</a>
+                <ul class="nav nav-stacked">
+                  <li><a href="#problem">Problem</a></li>
+                  <li><a href="#goal">Goal</a></li>
+                  <li><a href="#solution">Solution</a></li>
+                  <!-- <li><a href="#methods">Our Process</a></li>
+                  <li><a href="#my-role">My Contribution</a></li> -->
+                </ul>
+              </li>
+
+              <li>
+                <a href="#research">Research</a>
+                <ul class="nav nav-stacked">
+                  <li><a href="#litreview">Literature Review</a></li>
+                  <li><a href="#interview">NASA Interviews</a></li>
+                  <li><a href="#domains">Analogous Domains</a></li>
+                  <li><a href="#cps">Creative Problem Solving</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#researchapp">Research Application</a>
+                <ul class="nav nav-stacked">
+                  <li><a href="#anomaly-crit">Anomaly Criterias</a></li>
+                  <li><a href="#task-qua">Task Qualities</a></li>
+                  <li><a href="#guidelines">Guidelines</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#testing">Testing</a>
+                <ul class="nav nav-stacked">
+                  <li><a href="#testingboth">Tasks & M.A.S.T Testing</a></li>
+                  <li><a href="#finding">Findings</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#solution-mast">Solution - M.A.S.T</a>
+                <ul class="nav nav-stacked">
+                  <li><a href="#mast-provides">What It Provides</a></li>
+                  <li><a href="#mast-included">What It Includes</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#solution-roborun">Solution - Robo Run</a>
+                <ul class="nav nav-stacked">
+                  <!-- <li><a href="#roborun-video">Robo Run</a></li> -->
+                  <li><a href="#roborun-task">Robo Run Task</a></li>
+                  <li><a href="#howtoplay-roborun">How to Play</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#solution-spacerace">Solution - Space Race</a>
+                <ul class="nav nav-stacked">
+                  <!-- <li><a href="#spacerace-video">Usability Testing</a></li> -->
+                  <li><a href="#spacerace-task">Space Race Task</a></li>
+                  <li><a href="#howtoplay-spacerace">How to Play</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#highlight">Highlight Reel</a>
+              </li>
+
+              <li>
+                <a href="#reflection">Time at NASA</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- <div class="bg bg-nasa" data-aos="fade-up" data-aos-duration="600">
+          <video autoplay muted loop>
+            <source src="../../assets/nasa/bg-nasa-highlight-reel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div> -->
+
+        <div class="solution-hero">
+          <div class="solution-hero-trig trig-1">
+              <a href="#roborun-video"></a>
+          </div>
+          <div class="solution-hero-trig trig-2">
+              <a href="#solution-mast"></a>
+          </div>
+          <div class="solution-hero-trig trig-3">
+              <a href="#spacerace-video"></a>
+          </div>
+          <img class="i-full-w hero-1" src="../../assets/nasa/solution-img-2.jpg" alt="">
+          <img class="i-full-w hero-2" src="../../assets/nasa/home-img-1.jpg" alt="">
+          <img class="i-full-w hero-3" src="../../assets/nasa/solution-img-3.jpg" alt="">
+        </div>
+      
+
+        <!-- <div class="jumbotron" data-aos="fade-up" data-aos-duration="600">
+          <div class="jumbotron-text">
+          </div>
+        </div> -->
+
+
+
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content first-section">
+
+
+          <section id="overview" class="group" data-aos="fade-up" data-aos-duration="600">
+              <br>
+              <h3>Overview</h3>
+              <hr>
+              <img class="img-responsive full-img" src="../../assets/nasa/we-provide.png" alt="we provide statement">
+              <br><br><br>
+              <div id="problem" class="subgroup">
+                <h4>Problem</h4>
+                <p class="small-margin-bottom">To successfully reach Mars, astronauts will need greater autonomy when handling anomalies, as communication delays hinder Mission Control's ability to provide immediate support. NASA requires anomaly simulations to understand human performance in these high-risk scenarios.
+                  <br><br>
+                  <span class="highlight highlight-nasa">During future missions to Mars, astronauts will have to endure an up-to 40 minute round-trip communication delay with mission control.</span>
+                  <br><br>
+                  When unexpected problems arise, astronauts must operate with autonomy to solve these anomalies in the absence of Mission Control.
+                  Currently, NASA is researching new ways to aid astronauts in solving anomalies in space, but there is no standard method to assess readiness for their furtherest mission: going to Mars.
+                </p>
+                <img class="img-responsive full-img" src="../../assets/nasa/commdelay.jpg" alt="we provide statement">
+                <br><br><br>
+              </div>
+              <div id="goal" class="subgroup">
+                <h4>The Goal</h4>
+                <p>Our goal is to <span class="highlight highlight-nasa">empower researchers to better identify gaps in anomaly resolution through evaluating teams' performances in response to anomaly scenarios</span>.
+                </p>
+                <br>
+              </div>
+          </section>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+          <section class="group">
+              <div class="row">
+                <div  class="subgroup-left-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <h4 id="solution">Solution</h4>
+                    <p>Addressing this need, <span class="highlight highlight-nasa">we designed and developed two off-the-shelf tasks (anomaly scenarios) and a comprehensive manual called Manual for Anomaly Simulation Tasks (M.A.S.T)</span>, both providing NASA researchers a starting point for anomaly response research.
+                  </p>
+                </div>
+
+                <div class="subgroup-right-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h4>My Role</h4>
+                  <p>Lead UX Engineer, Product Designer, Researcher</p>
+                  <h4>Timeline</h4>
+                  <p>Jan. 2024 - Jul. 2024</p>
+                  <h4>Team Members</h4>
+                  <p>Margaret Lu, Vicky Sun, Sarina Vij, Joshua Winfrey
+                  </p>
+                  <h4></h4>
+                  <h4>Client</h4>
+                  <p>NASA Ames Research Center - HSI Division</p>
+                  <h4>External Website</h4>
+                  <p><a href="https://rocketgoboomboom.github.io/capstone-website/index.html" target="_blank" rel="noopener noreferrer">Project Website</a></p>
+                  <br>
+                  <br>
+                </div>
+              </div>
+          </section>
+
+          <div class="subgroup">
+            <!-- 3 card -->
+            <div class="row feature-row">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <a class="card-s-link" href="#solution-mast">
+                  <div class="card-s">
+                    <div class="card-s-img-container">
+                      <img class="i-full-w card-s-img" src="../../assets/nasa/solution-img-6.jpg" alt="" />
+                    </div>
+                    <div class="card-s-text">
+                      <h4 class="c-accent-primary card-s-title mb-16">M.A.S.T.</h4>
+                      <p class="c-primary card-s-desc mb-16">Manual for Anomaly Simulated Tasks, the one source of truth for task creation.</p>
+                      <a class="c-primary btn-secondary btn-tertiary" href="#solution-mast" target="_blank">Jump to MAST ↓</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+          
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <a class="card-s-link" href="#solution-roborun">
+                  <div class="card-s">
+                    <div class="card-s-img-container">
+                      <img class="card-s-img i-full-w" src="../../assets/nasa/solution-img-4.jpg" alt="" />
+                    </div>
+                    <div class="card-s-text">
+                      <h4 class="c-accent-primary card-s-title mb-16">Robo Run</h4>
+                      <p class="c-primary card-s-desc mb-16">A digital task where players have to get a robot to the end of an obstacle course.</p>
+                      <a class="c-primary btn-secondary btn-tertiary" href="#solution-roborun">Jump to Robo Run ↓</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+          
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <a class="card-s-link" href="#solution-spacerace">
+                  <div class="card-s">
+                    <div class="card-s-img-container">
+                      <img class="i-full-w card-s-img" src="../../assets/nasa/solution-img-5.jpg" alt="" />
+                    </div>
+                    <div class="card-s-text">
+                      <h4 class="c-accent-primary card-s-title mb-16">Space Race</h4>
+                      <p class="c-primary card-s-desc mb-16">A physical prototype where the goal is to travel as far as possible in an aircraft through manipulating critical systems on a panel.</p>
+                      <a class="c-primary btn-secondary btn-tertiary" href="#solution-spacerace">Jump to Space Race ↓</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div id="my-role" class="subgroup">
+                  <h4>My Contribution</h4>
+                  <p class="small-margin-bottom"><span class="highlight highlight-nasa">I led the design and delivery of the Manual for Anomaly Simulated Tasks (M.A.S.T.). Through researcher interviews, I identified user needs and developed use cases, crafting the overall experience and content of M.A.S.T. based on key insights. Additionally, I developed the essential "Task Qualities,"</span> a set of guidelines for creating tasks that simulate time-critical anomalies, which are included in M.A.S.T. 
+                  <br><br>
+
+                  <span class="highlight highlight-nasa">I also engineered and supported the creation of both tasks,</span> utilizing content from M.A.S.T. & applying Task Qualities to guide the task design process. 
+                  <br><br>
+                  <img class="img-responsive full-img" src="../../assets/nasa/my-contribution.png" alt="" data-aos="fade-up" data-aos-duration="600">
+                  </p>
+              </div>
+
+          </section>
+
+          <div class="section-divider">
+            <div class="dot1">
+            </div>
+            <div class="dot2">
+            </div>
+            <div class="dot3">
+            </div>
+          </div>
+
+          <section id="research" class="group" >
+            <div data-aos="fade-up" data-aos-duration="600">
+              <h3>Research</h3>
+              <hr>
+              <div class="subgroup">
+              </div>
+
+              <div id="litreview" class="subgroup">
+                  <h4>Literature Review</h4>
+
+                  <p class="small-margin-bottom">Our team conducted an extensive literature review to gain a comprehensive understanding of key topics relevant to our research. We delved into the intricacies of NASA's Human Systems Integration Division, <span class="highlight highlight-nasa">exploring how they integrate human considerations into the design and operation of aerospace systems.</span> This provided us with valuable insights into the critical role of how everything is integrated with each other in ensuring mission success and astronaut safety.
+                  <br><br>
+                  We also looked into anomalies in space missions. <span class="highlight highlight-nasa">We studied historical data on anomalies, their causes, and the strategies employed to resolve them.</span> The largest incidences included the Challenger disaster in 1986 and Columbia disaster in 2003, but we also looked at resolved anomalies such as the Apollo 13 mission.
+                  </p>
+                  <img class="img-responsive full-img" src="../../assets/nasa/literature-review.jpg" data-aos="fade-up" data-aos-duration="600">
+                  <figcaption>NASA Columbia Accident Investigation Board report on the 2003 Columbia disaster</figcaption>  
+                  <br><br><br>
+              </div>
+
+
+              <div id="interview" class="subgroup">
+                <h4>NASA Interviews</h4>
+                <p class="small-margin-bottom">During our visit to the NASA IWS conference, we had the privilege of interviewing numerous NASA experts from various disciplines, including medical research, analog operations, and astronaut training. We also interviewed researchers within the Human-Systems Integration Division, where we were based. Although not all subjects were directly related to our project, <span class="highlight highlight-nasa">these interviews & interactions provided us with a comprehensive understanding of NASA and how our project impacts the different divisions within. </span>
+                </p>
+                <img class="img-responsive full-img" src="../../assets/nasa/interview.jpg" data-aos="fade-up" data-aos-duration="600"> 
+                <figcaption>NASA Human Research Program Investigators' Workshop (HRP IWS) 2024 conference opening keynote, where we kickstarted our background research
+                </figcaption>   
+                <br><br><br>
+              </div>
+
+              <div id="domains" class="subgroup">
+                <h4>Analogous Domains</h4>
+                <p class="small-margin-bottom">We also explored other analogous domains including but not limited to aviation, design, and engineering to see <span class="highlight highlight-nasa">how people in other fields solve problems.</span>
+                <br><br>
+                <span class="highlight highlight-nasa">Aviation had many similar procedures in relation to NASA flight controllers where both pilots and flight controllers will include simulation into their training, but abnormal procedures aren't necessarily formally practiced.</span> However, both emphasize the importance of communication, especially communicating with other about the situation at hand.
+                <br><br>
+                In design, the major difference that comes with problem solving would be the creative aspect that can be incorporated. There was heavy emphasis on empathy and client delivery while in contrast, engineering was more based on logic flow and how accurate the delivery is.
+                </p>
+
+                <img class="img-responsive full-img" src="../../assets/nasa/analogous.jpg" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>Interview with a design professor, discussing the importance of inductive and deductive thinking in problem solving</figcaption>  
+                <br><br><br>
+              </div>
+
+              <div id="cps" class="subgroup">
+                <h4>Creative Problem Solving</h4>
+                <p class="small-margin-bottom">During the background research phase, we also looked deeply into creative problem solving as that would be <span class="highlight highlight-nasa">an aspect that astronauts must exude when dealing with long-duration mission.</span>
+                <br><br>
+                Through various creative problem solving models, we discovered that there isn't a model directly applicable for NASA's specific environment. During long-duration missions, NASA astronauts are in a high risk, low support, and no back-up environment, <span class="highlight highlight-nasa">making it extremely difficult to map directly to a creative problem solving model that already exists. Therefore, we created our own called the ARRC Model.</span>
+                </p>
+                <img class="img-responsive full-img" src="../../assets/nasa/arrcmodel.jpg" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>The ARRC Model, a creative problem solving model developed by us, Team Aegis
+                </figcaption>  
+              </div>
+
+            </div>
+            </section>
+
+            <div class="section-divider">
+              <div class="dot1">
+              </div>
+              <div class="dot2">
+              </div>
+              <div class="dot3">
+              </div>
+            </div>
+
+            <section id="researchapp" class="group" data-aos="fade-up" data-aos-duration="600">
+              <h3>Research Application</h3>
+              <hr>
+            </section>
+            </div>
+
+            
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <section class="group" data-aos="fade-up" data-aos-duration="600">
+              <div id="anomaly-crit" class="subgroup">
+                <h4>Anomaly Criterias</h4>
+                <p class="small-margin-bottom">Anomalies are unexpected events that deviates from the normal operation of spacecraft systems or mission parameters. But, the types of anomalies we're <span class="highlight highlight-nasa">more interested in are Time-Critical Anomalies that require urgent diagnosis.</span>
+                <table class="criteria-table">
+                  <thead>
+                    <tr>
+                      <th>Criteria</th>
+                      <th>Definition</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="criteria urgent">Urgent</td>
+                      <td>The problem is connected to a critical system, for example the oxygen system on a spacecraft</td>
+                    </tr>
+                    <tr>
+                      <td class="criteria unanticipated">Unanticipated</td>
+                      <td>There is no procedure or checklist to resolve the issue</td>
+                    </tr>
+                    <tr>
+                      <td class="criteria unknown">Unknown</td>
+                      <td>The problem has an unknown origin, doesn't know where the problem came from</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </p>
+                <p class="small-margin-bottom">This type of anomaly is especially dangerous as <span class="highlight highlight-nasa">in the past 15 years with ISS missions, the EIO Lab at Ames has identified that they occur about 1.7 times per year. When extrapolated to the Mars mission</span>, it means that
+                <span class="highlighthighlight-nasa">astronauts are more likely to encounter multiple time-critical anomalies throughout the Mars mission.</span> At the same time, Mission Control will no longer be able to provide immediate assistance, and the crew will have to be able to address the issues on their own.
+                </p>
+                <div class="dropdown-section">
+                  <button class="dropdown-toggle" onclick="toggleDropdown('dropdown-content-1')">
+                      <span class="dropdown-index">1</span>Causal relationships are not immediately understood
+                      <span class="dropdown-icon">&#9660;</span>
+                  </button>
+                  <div id="dropdown-content-1" class="dropdown-content">
+                      <div>
+                          <span class="dropdown-index">-</span> Causal relationships are not immediately understood
+                      </div>
+                      <div>
+                          <span class="dropdown-index">-</span> Limited intervention options
+                      </div>
+                      <div>
+                          <span class="dropdown-index">-</span> No perfect information during initial stages
+                      </div>
+                      <div>
+                          <span class="dropdown-index">-</span> Time pressure
+                      </div>
+                  </div>
+              
+                  <button class="dropdown-toggle" onclick="toggleDropdown('dropdown-content-2')">
+                      <span class="dropdown-index">2</span>Limited intervention options
+                      <span class="dropdown-icon">&#9660;</span>
+                  </button>
+                  <div id="dropdown-content-2" class="dropdown-content">
+                      <div>
+                          <span class="dropdown-index">-</span> Competing alarms across systems - challenge of isolating the initiation
+                      </div>
+                      <div>
+                          <span class="dropdown-index">-</span> Specific expertise required; challenge of "from 80+ people to 4" working the problem
+                      </div>
+                      <div>
+                          <span class="dropdown-index">-</span> Complexity of system and of anomaly
+                      </div>
+                      <div>
+                          <span class="dropdown-index">-</span> Challenge of safely perturbing the system to gain understanding of cause and effect
+                      </div>
+                  </div>
+              
+                  <button class="dropdown-toggle" onclick="toggleDropdown('dropdown-content-3')">
+                      <span class="dropdown-index">3</span>No perfect information during initial stages
+                      <span class="dropdown-icon">&#9660;</span>
+                  </button>
+                  <div id="dropdown-content-3" class="dropdown-content">
+                      <div>
+                          <span class="dropdown-index">-</span> Creativity required to generate workaround options
+                      </div>
+                      <div>
+                          <span class="dropdown-index">-</span> Systems thinking to perform risk assessments
+                      </div>
+                      <div>
+                          <span class="dropdown-index">-</span> Rapid synthesis and decision-making
+                      </div>
+                      <div>
+                          <span class="dropdown-index">-</span> Resource limited environment, limited redundancy, sparing, etc.
+                      </div>
+                      <div>
+                        <span class="dropdown-index">-</span> Procedures may have unexpected outcomes
+                    </div>
+                  </div>
+              
+                  <button class="dropdown-toggle" onclick="toggleDropdown('dropdown-content-4')">
+                      <span class="dropdown-index">4</span>Time pressure
+                      <span class="dropdown-icon">&#9660;</span> <!-- Dropdown arrow icon -->
+                  </button>
+                  <div id="dropdown-content-4" class="dropdown-content">
+                      <div>
+                          <span class="dropdown-index">-</span> Causal relationships are not immediately understood
+                      </div>
+                      <div>
+                          <span class="dropdown-index">-</span> Limited intervention options
+                      </div>
+                      <div>
+                          <span class="dropdown-index">-</span> No perfect information during initial stages
+                      </div>
+                      <div>
+                          <span class="dropdown-index">-</span> Time pressure
+                      </div>
+                  </div>
+                </div>
+                <br>
+              </div>
+              <br><br>
+            </section>
+          </div>
+
+          <!-- <img class="img-responsive full-screen-img"src="../../assets/ubapp/early-wireframes.png" data-aos="fade-up" data-aos-duration="600"> 
+          <br><br><br> -->
+
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <section class="group" data-aos="fade-up" data-aos-duration="600"> 
+
+              <div id="task-qua" class="subgroup">
+                <h4>Task Qualities</h4>
+                <p class="small-margin-bottom">Adapted from anomaly criterias, expert interviews, and secondary research, we developed task qualities, <span class="highlight highlight-nasa">which help simulate the qualities of an anomaly, which later on became the foundation for task development.</span> 
+                </p>
+                <img class="img-responsive full-img"src="../../assets/nasa/task-qualities-development.jpg" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>What task qualities are and the relations</figcaption>  
+                <br>
+                <p class="small-margin-bottom">By combining existing NASA Human Research Program (HRP) research as well as information that we gathered from expert interviews with astronaut trainers, we generated task qualities that help us simulate the qualities of an anomaly. <span class="highlight highlight-nasa">These task qualities will help us build and develop our tasks.</span>
+                </p>
+                <div class="dropdown-section">
+                  <button class="dropdown-toggle" onclick="toggleDropdown('dropdown-content-5')">
+                      <span class="dropdown-index">1</span>Information Proritization
+                      <span class="dropdown-icon">&#9660;</span>
+                  </button>
+                  <div id="dropdown-content-5" class="dropdown-content">
+                      <div>
+                          <span class="dropdown-index">-</span> Anomalies require astronauts to distinguish critical information from non-critical information and prioritize problems based on what is most likely to lead to fatality, as this poses teh greatest threat to mission success.
+                      </div>
+                  </div>
+      
+                  <button class="dropdown-toggle" onclick="toggleDropdown('dropdown-content-6')">
+                      <span class="dropdown-index">2</span>Cascading Problems
+                      <span class="dropdown-icon">&#9660;</span>
+                  </button>
+                  <div id="dropdown-content-6" class="dropdown-content">
+                      <div>
+                        <span class="dropdown-index">-</span> Situations where an initial issue or failure triggers a series of subsequent failures, each one compounding the impact of the previous one. since systems are so interconnected, astronauts will definitely have to encounter such events on long-duration missions.
+                      </div>
+                  </div>
+              
+                  <button class="dropdown-toggle" onclick="toggleDropdown('dropdown-content-7')">
+                      <span class="dropdown-index">3</span>Multiple Stressors
+                      <span class="dropdown-icon">&#9660;</span>
+                  </button>
+                  <div id="dropdown-content-7" class="dropdown-content">
+                      <div>
+                        <span class="dropdown-index">-</span> Astronauts face a great deal of psychological stress and pressure when dealing with critical anomalies. Having ot problem-solve and predict the effects of your actions in time-intensive situations is very difficult, so tasks should have multiple stressors to account for this.
+                      </div>
+                  </div>
+              
+                  <button class="dropdown-toggle" onclick="toggleDropdown('dropdown-content-8')">
+                      <span class="dropdown-index">4</span>Creative and Systematic Thinking
+                      <span class="dropdown-icon">&#9660;</span> <!-- Dropdown arrow icon -->
+                  </button>
+                  <div id="dropdown-content-8" class="dropdown-content">
+                      <div>
+                        <span class="dropdown-index">-</span> Creative thinking involves being able to repurpose existing knowledge in novel ways to develop efficient solutions while systematic thinking extends beyond one-to-one problem relationships.
+                      </div>
+                  </div>
+
+                  <button class="dropdown-toggle" onclick="toggleDropdown('dropdown-content-9')">
+                    <span class="dropdown-index">5</span>Built for Teams
+                    <span class="dropdown-icon">&#9660;</span> <!-- Dropdown arrow icon -->
+                </button>
+                <div id="dropdown-content-9" class="dropdown-content">
+                    <div>
+                      <span class="dropdown-index">-</span> There will be multiple astronauts dealing with anomalies. It is crucial for the success of any mission that astronauts can collaborate effectively and utilize the existing knowledge that each astronaut has. Tasks must make way for communication using features like assigning participants specified roles
+                    </div>
+                </div>
+                </div> 
+                <br><br>
+              </div>
+              <br><br>
+
+              <div id="guidelines" class="subgroup">
+                <h4>Guidelines</h4>
+                <p class="small-margin-bottom"><span class="highlight highlight-nasa">Guidelines are operationalizations of the task qualities that help researchers build tasks in greater detail.</span></p>
+                <img class="img-responsive full-img"src="../../assets/nasa/guidelines.jpg" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>Where guides are located in relation to task qualities in the M.A.S.T. document</figcaption>  
+                <br>
+                <p class="small-margin-bottom">In our interviews with HRP researchers, they all emphasized the importance of being able to back your claims with empirical research and reasoning. <span class="highlight highlight-nasa">This guideline shouldn't be presented in isolation. Guidelines should be fueled by research.</span>
+                  <br>
+                  <table class="criteria-table">
+                    <thead>
+                        <tr>
+                            <th>TASK QUALITY</th>
+                            <th>GUIDELINES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td class="criteria urgent">Information & Action Prioritization</td>
+                            <td>
+                                1. Tasks will provide one participant with no more than 5-9 chunks of information at any given time.
+                                <br>
+                                2. Tasks must incorporate data visualization elements. Data visualizations must allow participants to monitor trends in data and draw conclusions from the visualization as well.
+                                <br>
+                                3. Tasks will introduce problems of varying degrees of risk. The higher the likelihood of fatality, the greater the risk posed.
+                          </td>
+                        </tr>
+                        <tr>
+                            <td class="criteria unanticipated">Cascading Problems</td>
+                            <td>1. Each cascading problem will have a minimum of two levels of complexity.
+                              <br>
+                              2. The effects of cascading problems in the task will be both anticipated and unanticipated.
+                              <br>
+                              3. Some effects of cascading problems will be immediate, while others may not manifest until later stages.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="criteria unknown">Multiple Stressors</td>
+                            <td>1. Tasks will incorporate both time and situational stressors using different modalities.</td>
+                        </tr>
+                        <tr>
+                          <td class="criteria unknown">Induces Creative and Systematic Thinking</td>
+                          <td>1. According to the Consensual Assessment Technique (CAT), the task must have an average creativity score of 4 or above (out of a high score of 7).
+                            <br>
+                            2. According to our definition of systematic thinking, tasks should extend beyond one-to-one problem relationships. They should facilitate system-wide thinking, demonstrating how various parts are interconnected and allowing for multiple solutions to the problem.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="criteria unknown">Built for Teams</td>
+                          <td>1. Tasks must be multiplayer.
+                            <br>
+                            2. Participants are initially assigned predefined roles with specific responsibilities, but during the tasks, they are free to partake in work related to another participants roles.
+                          </td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </p>
+        
+              </div>
+            </section>
+          </div>
+
+          <!-- <img class="img-responsive full-screen-img"src="../../assets/ubapp/hi-fi-design.png" data-aos="fade-up" data-aos-duration="600"> 
+          <br> -->
+
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+
+            <div class="section-divider">
+              <div class="dot1">
+              </div>
+              <div class="dot2">
+              </div>
+              <div class="dot3">
+              </div>
+            </div>
+
+            <section id="testing" class="group" >
+              <h3>Testing</h3>
+              <hr>
+              <div id="testingboth" class="subgroup" data-aos="fade-up" data-aos-duration="600">
+                <h4>Tasks & M.A.S.T Testing</h4>
+                 <p class="small-margin-bottom">Testing to determine whether the guidelines and accompanying research presented a convincing case for adaptation and if researchers could envision multiple use cases for M.A.S.T.
+                </p>
+                <img class="img-responsive full-img"src="../../assets/nasa/mast-testing.jpg" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>Testing session with Robo Run</figcaption>
+                <br>
+                <p class="small-margin-bottom">During our Testing sessions, we showcased the five task qualities as well as information about our guidelines. We tested with a total of five participants:
+                <ul>
+                  <li><span class="highlight highlight-nasa">4 NASA Human Research Program (HRP) researchers</span></li>
+
+                  <li><span class="highlight highlight-nasa">1 former flight controller</span></li>
+                </ul>
+                </p>
+                <img class="img-responsive full-img"src="../../assets/nasa/mast-feedback.jpg" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>Feedback received on the task qualities in relation to the guidelines</figcaption>
+                <br>
+                <p class="small-margin-bottom">We got feedback initially about the task qualities (either along or in relation to one of our tasks) and then presented M.A.S.T.. We received both general, overarching feedback on the manual as well as specific feedback on some of the guidelines themselves. We then compiled this feedback together and utilized it to inform the presentation of the manual. On the section below, there are some findings we gathered to showcase how we implemented the changes to M.A.S.T. and to our tasks.
+                </p>
+              </div>
+              <br><br>
+              <div id="finding" class="subgroup" data-aos="fade-up" data-aos-duration="600">
+                <h4>Findings</h4>
+                 <p class="small-margin-bottom">After testing with NASA experts in anomaly scenarios, <span class="highlight highlight-nasa">here are a list of findings that we discovered and implemented in our prototypes.</span></p>
+                 <br>
+                <h5 class="nasa-h5">1. The manual should be able to be read and comprehended by a variety of different stakeholders in NASA.</h5>
+                <br>
+                <p class="small-margin-bottom">HRP researchers are not going to be the only ones who may have interest in M.A.S.T. For instance, flight controllers and astronauts (who have dealt first-hand with time-critical anomalies) may want to ensure that tasks created accurately simulate the challenges associated with anomalies.
+                </p>
+                <br>
+                <h5 class="nasa-h3">“Even people who are highly trained like astronauts or even flight controls, they may not even have all the answers to fully figure out a scenario, and that's why it's important to have like the procedures.”     —Former flight controller, NASA JSC </h5>
+                <br>
+                <p class="small-margin-bottom">Based on this, we decided to incorporate direct examples of how each of the two tasks we created (presented in further section) follow the manual's guidelines. By doing this, more audiences can understand how the guidelines should be utilized in task design and may be able to provide more efficient feedback during early prototyping phases.
+                </p>
+
+                <br><br><br>
+
+                <h5 class="nasa-h5">2. There should be an option for customization in the way that the guide is applied.</h5>
+                <br>
+                <p class="small-margin-bottom">Across different contexts, the guide may have the potential to be applied in a different manner.
+                </p>
+                <br>
+                <h5 class="nasa-h3">“If you want to build [the tasks] up, to look at the information you've done…just have a record of what you've done and how we can build on it.” —HRP Researcher, NASA Ames</h5>
+                <br>
+                <p class="small-margin-bottom">As a result, it is important to keep the guidelines broad, serving more as a “rule of thumb” than needing to be strictly adhered to.
+               </p>
+                <img class="img-responsive full-img"src="../../assets/nasa/guideline.jpg" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>The guideline in M.A.S.T.</figcaption>
+                <br>
+                <p class="small-margin-bottom">However, it does not specify exactly what type or how many data visualizations may be incorporated and this is by design. This allows the guidelines to be left to the discretion of the researcher; if the researcher puts more emphasis on a highly contextual environment, many data visualizations can be implemented within the task to mimic spacecraft displays. <span class="highlight highlight-nasa">Keeping the guidelines somewhat broad allows researchers some independence in the way the guidelines are applied depending on what they are trying to assess.</span>
+                </p>
+                
+                <br><br><br>
+
+                <h5 class="nasa-h5">3. Researchers should easily and effectively be able to tell whether a guideline is being applied.</h5>
+                <br>
+                <img class="img-responsive full-img"src="../../assets/nasa/mast-checklist.jpg" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>The checklist at the end in M.A.S.T.</figcaption>
+                <br>
+                <h5 class="nasa-h3">“I like the checklist format [of the guide] as kind of a reference for designing a task. Did you hit these things?”
+                  —HRP Researcher, NASA Ames</h5>
+                <br>
+                <p class="small-margin-bottom">We wanted to ensure that the manual was presented in a way so that researchers with very little time could easily adopt our guidelines. In other words, we wanted it to be possible for researchers to iterate quickly using our manual, perhaps creating many task prototypes before conducting further research to know what they want to test. In order to do this, we created a checklist at the end of our manual to go about this design process quickly.
+               </p>
+              </div>
+            </section>
+          </div>
+
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <div class="section-divider">
+              <div class="dot1">
+              </div>
+              <div class="dot2">
+              </div>
+              <div class="dot3">
+              </div>
+            </div>
+  
+            <section id="solution-mast" class="group" >
+              <h3>Solution - M.A.S.T</h3>
+              <hr>
+            </section>
+          </div>
+          
+          <img class="img-responsive full-screen-img"src="../../assets/nasa/solution-mast.png" data-aos="fade-up" data-aos-duration="600"> 
+          <br><br>
+
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <section id="solution" class="group" >
+
+              <div id="mast-provides" class="subgroup">
+                <h4>M.A.S.T. & What It Provides</h4>
+                 <p class="small-margin-bottom"><span class="highlight highlight-nasa">We created and designed a document</span> that provides researchers with information about<span class="highlight highlight-nasa"> how to design a task</span> as well as evidence behind why this information is being included.
+                  <br><br>
+                  Purpose of the guide is to give <span class="highlight highlight-nasa">NASA researchers a standardized framework for creating tasks that accurately simulates the challenges associated with anomalies</span> as currently they lack such structure.
+                </p>
+                <br><br>
+                <p class="p-center-wrapper"><a href="../../assets/nasa/MAST.pdf" target="_blank"><button class="btn black-button" name="button">View MAST ↗</button></a> </p>
+              </div>
+
+              <div id="mast-included" class="subgroup">
+                <h4>What is included in M.A.S.T. </h4>
+                <br>
+                <div class="row feature-row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="card-s">
+                        <div class="card-s-img-container">
+                          <img class="i-full-w card-s-img" src="../../assets/nasa/mast-solution-1.jpg" alt="" />
+                        </div>
+                        <div class="card-s-text">
+                          <h4 class="c-accent-primary card-s-title mb-16">Task Qualities</h4>
+                          <p class="c-primary card-s-desc mb-16">Help researchers understand what qualities are needed to simulate an anomaly</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+              
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="card-s">
+                        <div class="card-s-img-container">
+                          <img class="card-s-img i-full-w" src="../../assets/nasa/mast-solution-2.jpg" alt="" />
+                        </div>
+                        <div class="card-s-text">
+                          <h4 class="c-accent-primary card-s-title mb-16">Guidelines</h4>
+                          <p class="c-primary card-s-desc mb-16">Operationalizing of the task qualities to enable researchers to directly apply them to task creation.
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+              
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="card-s">
+                        <div class="card-s-img-container">
+                          <img class="i-full-w card-s-img" src="../../assets/nasa/mast-solution-3.jpg" alt="" />
+                        </div>
+                        <div class="card-s-text">
+                          <h4 class="c-accent-primary card-s-title mb-16">Supporting Research</h4>
+                          <p class="c-primary card-s-desc mb-16">Empirical research and reasoning as to why each guideline was created and needs to applied to task creation</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+          </div>
+
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <div class="section-divider">
+              <div class="dot1">
+              </div>
+              <div class="dot2">
+              </div>
+              <div class="dot3">
+              </div>
+            </div>
+  
+            <section id="solution-roborun" class="group" >
+              <h3>Solution - Robo Run</h3>
+              <hr>
+            </section>
+          </div>
+
+          <video id="roborun-video" class="img-responsive full-screen-img" autoplay muted loop>
+            <source src="../../assets/nasa/solution-roborun.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <br><br>
+          
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <section id="solution" class="group" >
+
+              <div id="roborun-task" class="subgroup">
+                <h4>Robo Run Task</h4>
+                 <p class="small-margin-bottom">
+                  Through navigating multiple components of the robot, players have to collaborate on helping the robot reach the end of the course while dealing with various problems before time runs out. Players have to determine the what type of issue they're faced with, and swiftly respond before their resources deplete by changing or fixing broken components.
+                  <br><br>
+                  <span class="highlight highlight-nasa">Robo Run is one of two living example of a task created from M.A.S.T.</span> Robo Run is a task we created and is ready for immediate use. NASA researchers from a variety of fields can use Robo Run as a simulation of a time-critical anomaly. 
+                </p>
+              </div>
+
+              <p class="p-center-wrapper"><a href="https://robot-obstacle-course.vercel.app/" target="_blank"><button class="btn black-button" name="button">Play Robo Run ↗</button></a> </p>
+              <br><br>
+
+              <div id="howtoplay-roborun" class="subgroup">
+                <h4>How to Play Robo Run</h4>
+                <img class="img-responsive full-img"src="../../assets/nasa/howtoplay-roborun.png" data-aos="fade-up" data-aos-duration="600"> 
+              </div>
+            </section>
+          </div>
+
+
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <div class="section-divider">
+              <div class="dot1">
+              </div>
+              <div class="dot2">
+              </div>
+              <div class="dot3">
+              </div>
+            </div>
+  
+            <section id="solution-spacerace" class="group" >
+              <h3>Solution - Space Race</h3>
+              <hr>
+            </section>
+          </div>
+
+          <video id="spacerace-video" class="img-responsive full-screen-img" autoplay muted loop>
+            <source src="../../assets/nasa/solution-spacerac.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <br><br>
+          
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <section id="solution" class="group" >
+
+              <div id="spacerace-task" class="subgroup">
+                <h4>Space Race Task</h4>
+                 <p class="small-margin-bottom">
+                  Participants are tasked with navigating their spacecraft as far as possible within 5 minutes without losing any critical systems. Participants must use a manual and data visualization to inform their decision making and carry out these actions by manipulating a physical instrument panel. By managing their resources and stabilizing any off-nominal activity, participants attempt to take the spacecraft further than any previous crew.
+                  <br><br>
+                  <span class="highlight highlight-nasa">Space Race is the second living example of a task created from M.A.S.T.</span> Space Race is a task we created and is ready for immediate use. NASA researchers from a variety of fields can use Space Race as a simulation of a time-critical anomaly. 
+                </p>
+                <img class="img-responsive full-img"src="../../assets/nasa/space-race-image.jpg" data-aos="fade-up" data-aos-duration="600"> 
+              </div>
+
+              <div id="howtoplay-spacerace" class="subgroup">
+                <h4>How to Play Space Race</h4>
+                <img class="img-responsive full-img"src="../../assets/nasa/howtoplay-spacerace.png" data-aos="fade-up" data-aos-duration="600"> 
+                <br>
+                <p class="p-center-wrapper"><a href="../../assets/nasa/space_race_manual.pdf" target="_blank"><button class="btn black-button" name="button">Read Space Race Manual ↗</button></a> </p>
+              </div>
+
+            </section>
+          </div>
+
+
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+
+            <div class="section-divider">
+              <div class="dot1">
+              </div>
+              <div class="dot2">
+              </div>
+              <div class="dot3">
+              </div>
+            </div>
+
+            <section id="highlight" class="group" >
+              <h3>Highlight Reel</h3>
+              <hr>
+              <div class="subgroup">
+                <video class="img-responsive full-img-video" controls>
+                  <source src="../../assets/nasa/bg-nasa-highlight-reel.mp4">
+                </video>
+              </div>
+            </section>
+          </div>
+        
+          
+    
+
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+          <div class="section-divider">
+            <div class="dot1">
+            </div>
+            <div class="dot2">
+            </div>
+            <div class="dot3">
+            </div>
+          </div>
+
+            <section id="reflection" class="group">
+              <div data-aos="fade-up" data-aos-duration="600">
+              <h3>Time at NASA</h3>
+              <hr>
+                <div class="subgroup">
+                  <p class="small-margin-bottom">This project was an incredible journey, spanning seven months and taking the entire team all the way to Mountain View, California. <span class="highlight highlight-nasa">I'd like to take a moment to express my gratitude to those who made this project possible—our project advisors at Ames, Katie McTigue and Katelyn Duncan!</span> I learned so much about team management, the user-experience journey, ANOMALIES and solving a problem that's quite literally out of this planet.
+                  </p>
+                  <p class="small-margin-bottom">
+                    <span class="highlight highlight-nasa">Of course we can't forget my awesome team members: Margaret Lu, Sarina Vij, Vicky Sun
+                  & Joshua Winfrey. Thank you all for being amazing!</span>
+                  </p>
+                  <img class="img-responsive full-img"src="../../assets/nasa/theteam.jpg" data-aos="fade-up" data-aos-duration="600"> 
+                </div>
+              </div>
+            </section>
+          </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <a href="" id="template-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+    <div class="container-fluid">
+      <div class="row footer-row">
+        <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p class="footer-text"></p>
+        </div>
+        <div class="footer-icons col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p>
+            <a href="https://www.linkedin.com/in/farhanahmed45/" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+            <a href="mailto:kaizufarhan@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+
+</html>

@@ -227,3 +227,15 @@ $.fn.isOnScreenHighlight = function(){
   return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.bottom || viewport.top > bounds.bottom));
 
 };
+
+function toggleDropdown(id) {
+  var content = document.getElementById(id);
+  var icon = content.previousElementSibling.querySelector('.dropdown-icon');
+  if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      icon.style.transform = "rotate(0deg)";
+  } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      icon.style.transform = "rotate(180deg)";
+  }
+}
