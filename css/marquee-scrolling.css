@@ -1,0 +1,40 @@
+
+.marquee {
+    width: 100vw;
+    height: 20vh;
+    background-color: #111111;
+    color: #eee;
+    overflow: hidden;
+}
+
+.marquee:before, .marquee::after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+
+
+.marquee-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling 10s linear infinite;
+}
+
+@keyframes scrolling {
+    0% { transform: translateX(0);}
+    100% { transform: translateX(calc(-1*20vh*9));}
+}
+
+.marquee-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    flex-shrink: 0;
+    font-size: 5rem;
+    white-space: nowrap;
+}
