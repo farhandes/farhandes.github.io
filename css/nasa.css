@@ -207,7 +207,7 @@
 
 @media (max-width: 480px) {
     .solution-hero {
-        height: auto; /* Allow content to define height */
+        height: 30vh; /* Allow content to define height */
     }
     
     .solution-hero img {
@@ -215,8 +215,24 @@
         height: auto;
     }
     .solution-hero-trig {
-        display: none; /* Hide triggers on very small screens */
+        display: 100; /* Hide triggers on very small screens */
     }
+    
+}
+
+@media (max-width: 350px) {
+  .solution-hero {
+      height: 20vh; /* Allow content to define height */
+  }
+  
+  .solution-hero img {
+      width: 100%;
+      height: auto;
+  }
+  .solution-hero-trig {
+      display: 100; /* Hide triggers on very small screens */
+  }
+  
 }
 
 
