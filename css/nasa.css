@@ -177,78 +177,30 @@
   .solution-hero {
     height: 50vh; 
   }
+  .solution-hero img {
+    width: 100%;
+    height: auto; 
+  }
+
+  .solution-hero-trig {
+    width: 100%;
+}
 }
 
 @media (max-width:480px) {
   .solution-hero {
     height: 30vh; 
   }
+
+  .solution-hero img {
+    width: 100%;
+    height: auto; 
+  }
+
+  .solution-hero-trig {
+    width: 100%;
 }
-
-
-  /* the media code below is for the hero section (with the 3 clickable images) on the nasa page but it bugs out under 480px where it doesn't show the overview section anymore but i kind of fixed which caused another issue everything on mobile is just left aligned and theres a big wide-white space on the right. will come back to.*/
-
-/* @media (max-width: 1200px) {
-    .solution-hero {
-        height: 75vh; 
-    }
-    .solution-hero img {
-      width: 100%;
-      height: auto; 
-    }
-    .solution-hero-trig {
-        width: 50%;
-    }
-    .trig-1 {
-        left: 0;
-    }
-    .trig-2 {
-        left: 50%;
-    }
-    .trig-3 {
-        display: none; 
-    }
 }
-
-@media (max-width: 850px) {
-    .solution-hero {
-        height: 50vh; 
-    }
-    .solution-hero img {
-        width: 100%;
-        height: auto;
-    }
-    .solution-hero-trig {
-        width: 100%;
-    }
-    .trig-1,
-    .trig-2,
-    .trig-3 
-    {
-        position: relative;
-        height: 33.33%;
-        width: 100%;
-        display: block;
-    }
-    .solution-hero-trig a {
-        height: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .solution-hero {
-        height: auto; 
-    }
-    
-    .solution-hero img {
-        height: auto;
-    }
-    .solution-hero-trig {
-        display: none; 
-    }
-    
-} */
-
 
 /* caption for images */
   figcaption {
