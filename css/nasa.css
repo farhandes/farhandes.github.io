@@ -220,6 +220,22 @@
     
 }
 
+@media (max-width: 350px) {
+  .solution-hero {
+      height: auto; /* Allow content to define height */
+  }
+  
+  .solution-hero img {
+      width: 100%;
+      height: auto;
+  }
+  .solution-hero-trig {
+      display: 100; /* Hide triggers on very small screens */
+  }
+  
+}
+
+
 
 
 /* caption for images */
