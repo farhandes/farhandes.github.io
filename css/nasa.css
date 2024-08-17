@@ -158,12 +158,77 @@
     opacity: 0;
   }
 
+  @media (max-width: 1200px) {
+    .solution-hero {
+        height: 75vh; /* Reduce height for medium screens */
+    }
+    .solution-hero img {
+      width: 100%;
+      height: auto; /* Maintain aspect ratio */
+    }
+    .solution-hero-trig {
+        width: 50%;
+    }
+    .trig-1 {
+        left: 0;
+    }
+    .trig-2 {
+        left: 50%;
+    }
+    .trig-3 {
+        display: none; /* Hide the third trigger on medium screens */
+    }
+}
+
+@media (max-width: 850px) {
+    .solution-hero {
+        height: 50vh; /* Further reduce height for small screens */
+    }
+    .solution-hero img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+    .solution-hero-trig {
+        width: 100%;
+    }
+    .trig-1,
+    .trig-2,
+    .trig-3 
+    {
+        position: relative;
+        height: 33.33%;
+        width: 100%;
+        display: block;
+    }
+    .solution-hero-trig a {
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .solution-hero {
+        height: auto; /* Allow content to define height */
+    }
+    
+    .solution-hero img {
+        width: 100%;
+        height: auto;
+    }
+    .solution-hero-trig {
+        display: none; /* Hide triggers on very small screens */
+    }
+}
+
+
+/* caption for images */
   figcaption {
     color: #555555;
     font-style: italic;
     padding: 8px;
     text-align: center;
   }
+
+
 
   /* table section for anomaly */
 
