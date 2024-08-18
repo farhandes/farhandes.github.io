@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  
 
   const mq = window.matchMedia( "(min-width: 991px)" );
   const funFacts = [
@@ -239,3 +240,6 @@ function toggleDropdown(id) {
       icon.style.transform = "rotate(180deg)";
   }
 }
+
+
+

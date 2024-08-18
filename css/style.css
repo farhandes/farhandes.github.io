@@ -2047,4 +2047,74 @@ h6 {
   width:220px;
 }
 
+/* cards / what I provide section */
+
+.help-section {
+  text-align: center;
+  padding: 40px;
+  font-family: 'Fakt';
+  margin-top: 100px; /* creates enough space top for users to scroll to see help section */
+  margin-bottom: 100px;
+}
+
+
+.help-section h2 {
+  font-size: 24px;
+  color: var(--primary-black); /* Use an existing color variable if needed */
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.help-card {
+  background-color: #ffffff; /* Background color */
+  padding: 20px;
+  border: solid #e6e6e6 1.5px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+}
+
+
+.help-card h3 {
+  font-size: 18px;
+  color: var(--secondary-black); /* Adjust color if needed */
+  margin-bottom: 10px;
+}
+
+.help-card p {
+  font-size: 20px;
+  color: var(--primary-text);
+  margin-bottom: 30px;
+}
+
+.help-card a {
+  font-size: 14px;
+  color: var(--primary-black);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.help-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 733px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center; /* Centers the cards */
+  }
+
+  .help-card {
+    width: 100%; /* Takes full width available */
+    max-width: 90%; /* Ensures a margin around the cards */
+  }
+}
+
 
