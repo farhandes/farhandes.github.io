@@ -1544,6 +1544,11 @@ i {
     left:0;
     z-index: -1;
   }
+  
+  .bg-ubapp {
+    background: url('../assets/ubapp/bg-ubapp-mobile.png') no-repeat center center;
+    background-size:cover;
+  }
 
   .bg-walker {
     background: url('../assets/walker-jumbotron-mobile.jpg') no-repeat center center;
@@ -1554,6 +1559,7 @@ i {
     background: url('../assets/up-jumbotron-mobile.jpg') no-repeat center center;
     background-size:cover;
   }
+
 
   .xs-hidden-manual {
     display:none;
