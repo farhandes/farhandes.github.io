@@ -19,17 +19,14 @@
     --highlight-google: #366FF225;
     --highlight-about: #ffdcc5;
     --highlight-nasa: #ffcfc7;
+    --highlight-busybee: #fae195;
 
     --nasa-color:#E4002B;
+    --busybee-color: #F9CB42;
     --ubapp-color:#005BBB;
-    --THD-color:#F96302;
-    --eatxplore-color:#F9CB42;
     --fordscooter-color: #1A72C4;
-    --walker-color:#5AD1FF;
     --about-color: #FF4500;
-    --cookfresh-color: #CFEB68;
-    --photos-color:#1A73E8;
-    --google-color:#366FF2;
+
 }
 
 
@@ -108,6 +105,11 @@ hr {
 
 }
 
+.video-feature-title-busybee {
+  color: var(--busybee-color) !important;
+
+}
+
 .video-feature-title-photos {
   color: var(--photos-color) !important;
 }
@@ -151,8 +153,18 @@ hr {
   line-height: 20px !important;
 }
 
-.bg-nasa {
+/* .bg-nasa {
   background: url('../assets/nasa/bg-nasa-highlight-reel.mp4') no-repeat center center;
+  background-size: cover;
+} */
+
+.bg-nasa-roborun {
+  background: url('../assets/nasa/solution-roborun.mp4') no-repeat center center;
+  background-size: cover;
+}
+
+.bg-busy-bee {
+  background: url('../assets/busy_bee/background.png') no-repeat center center;
   background-size: cover;
 }
 
@@ -548,6 +560,14 @@ hr {
   transition: background-position 0.8s ease-out;
 }
 
+.highlight-busybee {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-busybee) 50%);
+}
+
+.highlight-busybee.shown {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-busybee) 50%);
+}
+
 .highlight-nasa {
   background-image: linear-gradient(to right, transparent 50%, var(--highlight-nasa) 50%);
 }
@@ -608,6 +628,11 @@ hr {
 
 .ubapp-h5{
   border-left: 6px solid var(--ubapp-color);
+  padding-left: 28px;
+}
+
+.busybee-h5{
+  border-left: 6px solid var(--busybee-color);
   padding-left: 28px;
 }
 
@@ -1283,18 +1308,6 @@ i {
     z-index: -1;
   }
 
-  .bg-nasa video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    overflow: hidden;
-  }
-
   /* .mute-button {
     position: absolute;
     top: 20px;
@@ -1313,6 +1326,30 @@ i {
     background: url('../assets/nasa/bg-nasa-highlight-reel.mp4') no-repeat center center;
     background-size: cover;
   } */
+
+  .bg-nasa-roborun {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .bg-nasa-roborun video {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+  }
+
 
   .bg-fordscooter {
     background: url('../assets/ford-scooter/bg-fordscooter-1.png') no-repeat center center;
