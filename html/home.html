@@ -254,7 +254,24 @@
     </div>
 
 
-
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Check if specific elements are missing
+        const importantElements = document.querySelectorAll('#navbar-id, .hero, #provide, #my-work');
+        let missingElement = false;
+    
+        importantElements.forEach(element => {
+          if (!element || element.offsetHeight === 0) {
+            missingElement = true;
+          }
+        });
+    
+        // If any essential element is missing, show a message
+        if (missingElement) {
+          alert("If parts of this page aren't rendering, please try turning off any ad blocker and reloading the page. Thank you for your understanding as I work to fix this issue!");
+        }
+      });
+    </script>
 
 
   </body>
