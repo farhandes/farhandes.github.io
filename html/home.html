@@ -249,6 +249,7 @@
             <a href="mailto:kaizufarhan@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
           </p>
           <br>
+          <p class="footer-text-small">If parts of this page aren't rendering, please try turning off any ad blocker and reloading the page. Thank you for your understanding as I work to fix this issue!</p>
         </div>
       </div>
     </div>
@@ -256,23 +257,24 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-        // Check if specific elements are missing
+        // Define essential elements to check
         const importantElements = document.querySelectorAll('#navbar-id, .hero, #provide, #my-work');
-        let missingElement = false;
+        let hiddenElement = false;
     
         importantElements.forEach(element => {
-          if (!element || element.offsetHeight === 0) {
-            missingElement = true;
+          // Check if the element is hidden (display: none, visibility: hidden, or opacity: 0)
+          const style = window.getComputedStyle(element);
+          if (style.display === 'none' || style.visibility === 'hidden' || style.opacity === '0') {
+            hiddenElement = true;
           }
         });
     
-        // If any essential element is missing, show a message
-        if (missingElement) {
-          alert("If parts of this page aren't rendering, please try turning off any ad blocker and reloading the page. Thank you for your understanding as I work to fix this issue!");
+        // If any element is hidden, show a message
+        if (hiddenElement) {
+          alert("If this isn't rendering, please try turning off ad blocker and reloading the page.");
         }
       });
     </script>
-
 
   </body>
 
