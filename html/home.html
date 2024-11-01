@@ -66,6 +66,7 @@
     <script src="https://use.fontawesome.com/a891bb0a11.js"></script>
     <script src="../js/script.js" charset="utf-8"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
   </head>
 
   <body>
@@ -93,13 +94,21 @@
       <div id="skills"></div>
       <h1 class="title"><span class="animated-text" style="--delay: 0.2s">Farhan</span> <span class="animated-text" style="--delay: 0.3s">Ahmed</span></h1>
       <div class="subtitle fade-in">
-          <!-- <p>Helping enterprises design & develop MVP's, FAST </p> -->
-           <p>Foward Thinking Designer</p>
+        <p>Forward Thinking Designer</p>
       </div>
-      <div class="arrow bounce" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-offset="-300"><a href="#my-work"><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></a>
+      <div class="arrow bounce" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-offset="-300">
+        <a href="#my-work"><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></a>
       </div>
     </div>
     <script src="../js/hero.js"></script>
+
+
+    <!-- exclamation point button-->
+    <button id="info-button" class="info-button" onclick="toggleInfoMessage()">!</button>
+    <div id="info-message" class="info-message">
+      If parts of this page aren't rendering, please try turning off any ad blocker or switching to Safari / Microsoft Edge. Thank you for your understanding as I work to fix this issue!
+    </div>
+
 
 
 
@@ -260,32 +269,10 @@
             <a href="mailto:kaizufarhan@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
           </p>
           <br>
-          <p class="footer-text-small">If parts of this page aren't rendering, please try turning off any ad blocker and reloading the page. Thank you for your understanding as I work to fix this issue!</p>
+          <!-- <p class="footer-text-small">If parts of this page aren't rendering, please try turning off any ad blocker and reloading the page. Thank you for your understanding as I work to fix this issue!</p> -->
         </div>
       </div>
     </div>
-
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        // Define essential elements to check
-        const importantElements = document.querySelectorAll('#navbar-id, .hero, #provide, #my-work');
-        let hiddenElement = false;
-    
-        importantElements.forEach(element => {
-          // Check if the element is hidden (display: none, visibility: hidden, or opacity: 0)
-          const style = window.getComputedStyle(element);
-          if (style.display === 'none' || style.visibility === 'hidden' || style.opacity === '0') {
-            hiddenElement = true;
-          }
-        });
-    
-        // If any element is hidden, show a message
-        if (hiddenElement) {
-          alert("If this isn't rendering, please try turning off ad blocker and reloading the page.");
-        }
-      });
-    </script>
 
   </body>
 

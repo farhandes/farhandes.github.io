@@ -2155,3 +2155,49 @@ h6 {
 }
 
 
+/* sticky exclamation point button */
+
+.info-button {
+  position: fixed;  /* Fixed position to ensure it stays on the screen */
+  bottom: 20px;     /* Distance from the bottom of the screen */
+  right: 42px;      /* Distance from the right side of the screen */
+  background-color: #555555; /* Red background */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;      /* Slightly larger size for better visibility */
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;    /* High z-index to ensure it's always on top */
+}
+
+
+.info-message {
+  display: none;
+  position: fixed;
+  bottom: 70px;    /* Display message slightly above the button */
+  right: 20px;
+  background-color: #ffffff;
+  color: #111111;
+  border: 1px solid #dddddd;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  z-index: 1000;
+}
+
+.info-message::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;   /* Align the arrow below the message box */
+  right: 15px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+

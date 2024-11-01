@@ -243,3 +243,9 @@ function toggleDropdown(id) {
 
 
 
+// script for toggling information message button (sticky exclamation button)
+function toggleInfoMessage() {
+  const message = document.getElementById('info-message');
+  message.style.display = message.style.display === 'block' ? 'none' : 'block';
+}
+
