@@ -2161,7 +2161,7 @@ h6 {
   position: fixed;  /* Fixed position to ensure it stays on the screen */
   bottom: 20px;     /* Distance from the bottom of the screen */
   right: 42px;      /* Distance from the right side of the screen */
-  background-color: #555555; /* Red background */
+  background-color: #f44336; /* Red background */
   color: white;
   border: none;
   border-radius: 50%;
