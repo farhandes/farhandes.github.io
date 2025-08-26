@@ -249,3 +249,4 @@ function toggleInfoMessage() {
   message.style.display = message.style.display === 'block' ? 'none' : 'block';
 }
 
+
