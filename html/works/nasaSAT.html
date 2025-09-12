@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZKFSQ82EQN"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-ZKFSQ82EQN');
+    </script>
+
+    <!-- Microsoft clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "nmdntxogv5");
+    </script>
+
+        
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=false;">
+    <title>NASA SAT</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/logos/farhan_logo.ico">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Stylesheet -->
+    <link rel = "stylesheet" type = "text/css" href = "../../css/style.css" />
+    <link rel = "stylesheet" type = "text/css" href = "../../css/fonts.css" />
+    <link rel = "stylesheet" type = "text/css" href = "../../css/nasa.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../../css/zoom.css" rel="stylesheet">
+    <script src="../../js/transition.js"></script>
+    <script src="../../js/zoom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://use.fontawesome.com/a891bb0a11.js"></script>
+    <script src="../../js/script.js" charset="utf-8"></script>
+
+    <!-- <script>
+      function run() {
+          var password = prompt("Password Please. This case study is password protected. If you'd like the password please email me kaizufarhan@gmail.com");
+          if (password != 'NASA123') {
+              document.body.innerHTML = '';
+              document.body.innerHTML = `
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; text-align: center;">
+                  <p>Wrong Password! Try again or go back to the home page by pressing the back button :)</p>
+                  <button style="margin: 10px; padding: 10px 20px;" onclick="window.location.href=document.referrer;">Go Back</button>
+                  <button style="margin: 10px; padding: 10px 20px;" onclick="location.reload();">Try Again</button>
+                </div>`;
+          } else {
+              alert('Success');
+              document.getElementById("protected-content").style.display = 'block';
+          }
+      }
+      window.onload = run; // Automatically run when the page loads
+    </script> -->
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsible-nav">
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../home.html">Farhan Ahmed</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right" id="collapsible-nav">
+        <ul class="nav navbar-nav">
+          <li><a class="selected hvr-underline-from-left" href="../home.html#my-work">Works</a></li>
+          <li><a class="hvr-underline-from-left" href="../../assets/resume/Md_Farhan_Ahmed_Resume (3).pdf" target="_blank">Resume</a></li>
+          <li><a class="hvr-underline-from-left" href="../about-me.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="container-fluid">
+      <div class="row" style="margin-top: 50px">
+        <nav class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+          <div class="bs-docs-sidebar">
+            <ul class="nav nav-stacked"id="sidebar">
+
+              <li>
+                <a href="#overview">Overview</a>
+                <ul class="nav nav-stacked">
+                  <li><a href="#problem">Problem</a></li>
+                  <li><a href="#challenge">Current Challenge</a></li>
+                  <li><a href="#goal">Goal</a></li>
+                  <li><a href="#teamandownership">My Team & My Ownership</a></li>
+                  <!-- <li><a href="#methods">Our Process</a></li>
+                  <li><a href="#my-role">My Contribution</a></li> -->
+                </ul>
+              </li>
+
+              <li>
+                <a href="#research">Research</a>
+                <ul class="nav nav-stacked">
+                  <!-- <li><a href="#litreview">Literature Review</a></li> -->
+                  <li><a href="#interview">NASA Interviews</a></li>
+                  <li><a href="#journeymaps">User Journey Maps</a></li>
+                  <li><a href="#insights">Insights</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#ideatevalidate">Ideation & Validation</a>
+                <ul class="nav nav-stacked">
+                  <!-- <li><a href="#designprocess">Design Process</a></li> -->
+                  <li><a href="#ideation">Ideation</a></li>
+                  <li><a href="#earlyvalidation">Early Validation</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#solution-roborun">Design - Robo Run</a>
+                <ul class="nav nav-stacked">
+                  <!-- <li><a href="#roborun-video">Robo Run</a></li> -->
+                  <li><a href="#roborun-task">What is Robo Run</a></li>
+                  <!-- <li><a href="#howtoplay-roborun">How to Play</a></li> -->
+                  <li><a href="#designprocess">Design Process</a></li>
+                  <li><a href="#designsystem">Design System</a></li>
+                  <li><a href="#highlight">Highlight Reel</a></li>
+                </ul>
+              </li>       
+              
+              <li>
+                <a href="#impactoutcome">Impact & Outcome</a>
+                <ul class="nav nav-stacked">
+                  <li><a href="#impact">Impact of Robo Run</a></li>
+                  <li><a href="#outcome">Outcome</a></li>
+
+                </ul>
+              </li> 
+
+              <!-- <li>
+                <a href="#solution-spacerace">Solution - Space Race</a>
+                <ul class="nav nav-stacked">
+                  <li><a href="#spacerace-task">Space Race Task</a></li>
+                  <li><a href="#howtoplay-spacerace">How to Play</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#highlight">Highlight Reel</a>
+              </li> -->
+
+              <li>
+                <a href="#reflection">Reflection</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      
+        <div class="bg bg-nasa-roborun" data-aos="fade-up" data-aos-duration="600">
+          <video autoplay muted loop>
+            <source src="../../assets/nasa/solution-roborun.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="jumbotron" data-aos="fade-up" data-aos-duration="600">
+          <div class="jumbotron-text">
+          </div>
+        </div>
+
+
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content first-section">
+
+
+          <section id="overview" class="group">
+              <br>
+              <h3>Overview</h3>
+              <hr>
+              <img class="img-responsive full-img" src="../../assets/nasa/nasa-project/we-provide.png" alt="we provide statement">
+              <br><br><br>
+              <div id="problem" class="subgroup">
+                <h4>Problem</h4>
+                <p class="small-margin-bottom">To successfully reach Mars, astronauts will need greater autonomy when handling anomalies, as communication delays hinder Mission Control's ability to provide immediate support. NASA requires anomaly simulations to understand human performance in these high-risk scenarios.
+                  <br><br>
+                  During future missions to <span class="highlight highlight-nasa">Mars, astronauts will have to endure an up-to 40 minute round-trip communication delay with mission control</span>. If a problem were to occur, astronauts are by themselves. <span class="highlight highlight-nasa">Astronauts will have to respond and solve anomalies indepdently in space. </span>
+                </p>
+                <br><br>
+                <img class="img-responsive full-img" src="../../assets/nasa/nasa-project/commdelay.jpg" alt="we provide statement">
+                <br><br><br>
+              </div>
+
+              <div id="challenge" class="subgroup">
+                <h4>Current Challenge</h4>
+                <p class="small-margin-bottom">
+                  <span class="highlight highlight-nasa">One of the ways NASA researchers are trying to address this communication delay challenge is by simulating key qualities of anomalies.</span> The goal is to understand <span class="highlight highlight-nasa">how astronauts react without external help like mission control</span>, which would allow the researchers to develop better tools to improve astronaut survivability, for when they do eventually go to mars missions. 
+                  <br><br>
+                  Unfortunately, NASA researchers are lacking abstract simulations that can truly provide astronauts a challenge that isn't related to user experience (remember this for later).
+                </p>
+                <br>
+                <img class="img-responsive full-img" src="../../assets/nasa/nasa-project/researchers_simulating_1.png">
+                <br>
+              </div>
+
+              <div id="goal" class="subgroup">
+                <h4>The Goal</h4>
+                <p>
+                Our goal was to <span class="highlight highlight-nasa">provide NASA researchers a simulation tool that allows them to assess crew performance in the presence of anomalies in spaceflight.</span>
+                </p>
+                <br>
+              </div>
+
+              <!-- <div id="team" class="subgroup">
+                <h4>My Team and I</h4>
+                <p>
+                Our goal was to <span class="highlight highlight-nasa">provide NASA researchers a simulation tool that allows them to assess crew performance in the presence of anomalies in spaceflight.</span>
+                </p>
+                <br>
+              </div> -->
+          </section>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+          <section class="group">
+              <div class="row">
+                <div  class="subgroup-left-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <h4 id="teamandownership">My Team & My Contribution</h4>
+                    <p>My team composed of me, a Product Designer, a Product Manager, another Product Designer, a User Researcher, and a Software Engineer.
+                      <br><br>
+                      <img class="img-responsive full-img" src="../../assets/nasa/nasa-project/my_team.png">
+                      <br><br>
+                      Ultimately my team and I shipped two products, but in this case study, <span class="highlight highlight-nasa">I'll focus on the product I owned and led.</span>
+                      <br><br>
+                      <img class="img-responsive full-img" src="../../assets/nasa/nasa-project/ownership.png">
+                  </p>
+                </div>
+
+                <div class="subgroup-right-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h4>My Role</h4>
+                  <p>Product Designer</p>
+                  <h4>Timeline</h4>
+                  <p>7 Months (Jan. 2024 - Jul. 2024)</p>
+                  <h4>Client</h4>
+                  <p>NASA Ames Research Center - HSI Division
+                  </p>
+                  <h4></h4>
+                  <h4>Solution</h4>
+                  <p>Sneak Peak to <a href="https://robot-obstacle-course.vercel.app/" target="_blank" rel="noopener noreferrer">Solution</a></p>
+                  <!-- <h4>External Website</h4> -->
+                  <!-- <p><a href="https://rocketgoboomboom.github.io/capstone-website/index.html" target="_blank" rel="noopener noreferrer">Project Website</a></p> -->
+                  <br>
+                  <br>
+                </div>
+              </div>
+              <p class="p-center-wrapper"><a href="#solution-roborun" target="_blank"><button class="btn black-button" name="button">Jump to Solution</button></a> </p>
+          </section>
+
+
+          <div class="section-divider">
+            <div class="dot1">
+            </div>
+            <div class="dot2">
+            </div>
+            <div class="dot3">
+            </div>
+          </div>
+
+          <section id="research" class="group" >
+            <div data-aos="fade-up" data-aos-duration="600">
+              <h3>Research</h3>
+              <hr>
+              <div class="subgroup">
+              </div>
+
+              <!-- <div id="litreview" class="subgroup">
+                  <h4>Literature Review</h4>
+                  <p class="small-margin-bottom">In order to create simulation of the qualities of anomalies, we first need to know what an anomaly is and study previous anomalies that resulted in disasters like the Columbia incident. So, my user researcher and I performed a lot of literature review which is often unconventional in the UX world but when you're in an unfamiliar domain where you need knowledge quickly, literature review is not a bad way to go.
+                  <br>
+                  </p>
+                  <img class="img-responsive full-img" src="../../assets/nasa/literature-review.jpg" data-aos="fade-up" data-aos-duration="600">
+                  <figcaption>NASA Columbia Accident Investigation Board report on the 2003 Columbia disaster</figcaption>  
+                  <br><br>
+              </div> -->
+
+
+              <div id="interview" class="subgroup">
+                <h4>Expert Interviews</h4>
+                <!-- <img src="../../assets/nasa/nasa-project/me_researcher.png"> -->
+                <p class="small-margin-bottom">In order to create simulation of the qualities of anomalies, we first need to know what an anomaly is and study previous anomalies that resulted in disasters like the Columbia incident. So, my UX Researcher and I  performed <span class="highlight highlight-nasa">10 rounds of interviews with different NASA researchers who we were our primary end users.</span> The goal of the interviews were to uncover more information about the current processes and the approach to creating simulations of anomalies, as well as understanding more about anomalies.
+                <br>
+                </p>
+                <img class="img-responsive full-img" src="../../assets/nasa/analogous.jpg" data-aos="fade-up" data-aos-duration="600"> 
+                <figcaption>Interview with a NASA researcher, discussing the importance of creative problem solving
+                </figcaption>   
+                <br><br><br>
+              </div>
+
+              <div id="journeymaps" class="subgroup">
+                <h4>User Journey Maps</h4>
+                <!-- <img src="../../assets/nasa/nasa-project/me_researcher.png">        -->
+                <p class="small-margin-bottom">As we gained more information from interviews, I created user journeys maps for each of our interviewee and I tried to find some parallel in terms of each of their painpoints.</span>
+                <br>
+                </p>
+                <img class="img-responsive full-img" src="../../assets/nasa/nasa-project/user_journey_maps.png" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>3 of 10 user journey maps</figcaption>  
+                <br><br><br>
+              </div>
+
+              <div id="insights" class="subgroup">
+                <h4>Insights</h4>
+                <!-- <img src="../../assets/nasa/nasa-project/me_researcher_pm.png">
+                <br> <br> -->
+                <p class="small-margin-bottom">The most important insights gained from the user journeys were:</p>
+                <div class="dropdown-section">
+                  <button class="dropdown-toggle" onclick="toggleDropdown('dropdown-content-1')">
+                      <span class="dropdown-index">1</span>The simulations NASA has aren't “complex” enough
+                      <span class="dropdown-icon">&#9660;</span>
+                  </button>
+                  <div id="dropdown-content-1" class="dropdown-content">
+                      <div>
+                          <span class="dropdown-index">•</span> There isn't a system that has enough mechanics in order to truly challenge the astronauts. 
+                      </div>
+                  </div>
+              
+                  <button class="dropdown-toggle" onclick="toggleDropdown('dropdown-content-2')">
+                      <span class="dropdown-index">2</span>Higher ups didn't value simulation when they developing them expensive.
+                      <span class="dropdown-icon">&#9660;</span>
+                  </button>
+                  <div id="dropdown-content-2" class="dropdown-content">
+                      <div>
+                          <span class="dropdown-index">•</span>The division we were a part-HSI-didn't have enough funding for the simulations NASA researchers wanted because simulations tended to get expensive, so the development of each simulation was always off budget, and the higher ups were not happy with that.
+                      </div>
+                  </div>
+              
+                  <button class="dropdown-toggle" onclick="toggleDropdown('dropdown-content-3')">
+                      <span class="dropdown-index">3</span>Portability is often not possible with physical-based simulations.
+                      <span class="dropdown-icon">&#9660;</span>
+                  </button>
+                  <div id="dropdown-content-3" class="dropdown-content">
+                      <div>
+                          <span class="dropdown-index">•</span>The simulations that have been created in the past are not portable. There are too many physical components to be moved around so getting astronauts scheduled, logistically, in order to use the simulation was challenging.
+                      </div>
+                  </div>
+                </div> 
+                <br><br>
+                <p>Lastly, a quote from a NASA researcher that really shocked us but also provided a clear pain point with previous simulation was: </p>
+                <!-- <h5 class="nasa-h3">“We need to [make] simulations have systems and perfect UX.” </h5>
+                <h5>— HRP Researcher, NASA Ames</h5> -->
+                <img class="img-responsive full-img" src="../../assets/nasa/nasa-project/quote-1.png" data-aos="fade-up" data-aos-duration="600">
+                <br><br>
+                <p>In previous simulations, <span class="highlight highlight-nasa">the issues astronauts encountered weren't with responding to the anomalies themselves, but with the interface and user flow of the simulations—problems that distracted from the researchers' actual goals</span>. So moving forward, I made sure the other designer, as well as myself, prioritized <span class="highlight highlight-nasa">creating a 'perfect UX' from the ground up</span>, making sure the simulation or rather the tasks inside the simulation were the pieces that were actually challenging rather than the usability of the simulation.</p>
+              </div>
+
+            </div>
+            </section>
+
+            <div class="section-divider">
+              <div class="dot1">
+              </div>
+              <div class="dot2">
+              </div>
+              <div class="dot3">
+              </div>
+            </div>
+
+            <section id="ideatevalidate" class="group" data-aos="fade-up" data-aos-duration="600">
+              <h3>Ideation & Validation</h3>
+              <hr>
+            </section>
+          </div>
+
+            
+          <!-- <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <section class="group" data-aos="fade-up" data-aos-duration="600">
+              <div id="designprocess" class="subgroup">
+                <h4>Design Process</h4>
+                <p class="small-margin-bottom">While I was hands on with the whole process, the majority of my contribution went from the ideation phase to the validation phase and some development.</p>
+                <br>
+                <img class="img-responsive full-img" src="../../assets/nasa/nasa-project/designprocess.png" data-aos="fade-up" data-aos-duration="600">
+              </div>
+              <br><br>
+            </section>
+          </div> -->
+
+          <!-- <img class="img-responsive full-screen-img"src="../../assets/ubapp/early-wireframes.png" data-aos="fade-up" data-aos-duration="600"> 
+          <br><br><br> -->
+
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <section class="group" data-aos="fade-up" data-aos-duration="600"> 
+              <div id="ideation" class="subgroup">
+                <h4>Ideation</h4>
+                <!-- <img src="../../assets/nasa/nasa-project/me_pd.png">
+                <br><br> -->
+                <p class="small-margin-bottom"> My co-designer and I designed various anomaly scenarios, from something conventional like a flight simulator malfunction requiring astronaut intervention, to more creative challenges like a robot war, where astronauts must repair a damaged robot between rounds to keep it operational. <span class="highlight highlight-nasa">While we generated several strong concepts, we needed a way to validate and refine them.</span>
+                </p>
+                <img class="img-responsive full-img"src="../../assets/nasa/nasa-project/ideation.png" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>All the different ideas my co-designer and I created</figcaption>  
+                <br>
+              </div>
+
+              <div id="earlyvalidation" class="subgroup" data-aos="fade-up" data-aos-duration="600" >
+                <h4>Early Validation</h4>
+                <!-- <img src="../../assets/nasa/nasa-project/me_pd_research.png">
+                <br><br> -->
+
+                <p class="small-margin-bottom">The way we consolidated our ideas was by conducting early validation testing with our primary end users, nasa researchers. <span class="highlight highlight-nasa">I specifically vouched for this approach to the other designer and researcher, because of the limited time we had with the project as well as the nature of the our end goal which was a complex and a logistical simulation.</span> So, we had to make sure from early on that the direction we'd be going towards was not a waste of time or money. 
+                </p>
+                <img class="img-responsive full-img"src="../../assets/nasa/nasa-project/earlyvalidation.png" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>An early concept of a web-based simulation that was tested with NASA researchers</figcaption>  
+                <br><br><br>
+
+                <p class="small-margin-bottom">The goal of these validation testing sessions was to answer four key questions:</p>
+                <table class="criteria-table" >
+                  <thead>
+                    <tr>
+                      <th>Early Validation Questions</th>
+                      <th>Answers Received</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="criteria urgent">Does it have a complex system? </td>
+                      <td>Yes, and the system can scale.</td>
+                    </tr>
+                    <tr>
+                      <td class="criteria unanticipated">Does it have “perfect UX”?</td>
+                      <td>Not yet but it will.</td>
+                    </tr>
+                    <tr>
+                      <td class="criteria unknown">Will it be portable?</td>
+                      <td>Yes.</td>
+                    </tr>
+                    <tr>
+                      <td class="criteria unknown">Will it be expensive to develop?</td>
+                      <td>No.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="small-margin-bottom">Once both the researcher, the other product designer, and I were satisfied with these answers, we narrowed our focus to 1-2 ideas that we decided to move forward with.</p>
+                <br>
+              </div>
+              
+              
+            </section>
+          </div>
+
+          <!-- <img class="img-responsive full-screen-img"src="../../assets/ubapp/hi-fi-design.png" data-aos="fade-up" data-aos-duration="600"> 
+          <br> -->
+
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <div class="section-divider">
+              <div class="dot1">
+              </div>
+              <div class="dot2">
+              </div>
+              <div class="dot3">
+              </div>
+            </div>
+  
+            <section id="solution-roborun" class="group" >
+              <h3>Design - Robo Run</h3>
+              <hr>
+            </section>
+          </div>
+
+          <video id="roborun-video" class="img-responsive full-screen-img" autoplay muted loop>
+            <source src="../../assets/nasa/nasa-project/roborun-showcase.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <br><br>
+          
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <section id="solution" class="group" >
+
+              <div id="roborun-task" class="subgroup">
+                <h4>What is Robo Run</h4>
+                 <p class="small-margin-bottom">
+                  Robo Run is an abstract anomaly simulation designed for 3-4 astronauts, depending on the chosen difficulty. The team is split into two roles: navigator and engineer. The objective is to move a small cube on the left side of the screen as far as possible while managing backend system issues displayed on the two right screens. With numerous mechanics involved, this simulation demands creative problem-solving to progress further and succeed.
+                </p>
+              </div>
+
+              <p class="p-center-wrapper"><a href="https://robot-obstacle-course.vercel.app/" target="_blank"><button class="btn black-button" name="button">Try Robo Run ↗</button></a> </p>
+              <br><br>
+
+              <div id="designprocess" class="subgroup">
+                <h4>Design Process</h4> 
+                <p class="small-margin-bottom">Below, are snapshots of some of the work that I did and went into designing robo-run.</p>
+                <img class="img-responsive full-img"src="../../assets/nasa/nasa-project/storage-comapirson.png" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>Redesigned storage page after user testing</figcaption>  
+                <br><br>
+                <img class="img-responsive full-img"src="../../assets/nasa/nasa-project/inventory-comparison.png" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>Redesigned inventory section after user testing</figcaption>  
+                <br><br>
+                <img class="img-responsive full-img"src="../../assets/nasa/process-robo-final.png" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>Snapshhot of designing the screens</figcaption>  
+                <br><br>
+                <img class="img-responsive full-img"src="../../assets/nasa/process-robo-errors.png" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>Designing a new task inside robo-run</figcaption>  
+              </div>
+
+              <div id="designsystem" class="subgroup">
+                <h4>Design System, Scaling Designs</h4> 
+                <p class="small-margin-bottom">Looking ahead, I knew that this simulation will become increasingly complex as NASA researchers adapts it to match astronauts' skills. This means that certain mechanics might get removed or added depending on future requirements. <span class="highlight highlight-nasa">In order to support this products growth, I created a large and up-to-date design system in figma in order to support the scalability of this product.</span></p>
+                <p class="small-margin-bottom"><span class="highlight highlight-nasa">At the same time, I added detailed guidelines to these components so that future designers could easily understand how to design for the interface. </span>This included specifying things like the spacing between data bars, the meaning of error states, and more. Knowing that this system would scale over time, it was essential that our designs were built with scalability in mind, and I ensured that with a detailed design system. </p>
+                <img class="img-responsive full-img"src="../../assets/nasa/process-robo-components.png" data-aos="fade-up" data-aos-duration="600">
+                <figcaption>Snapshot of design system and guidelines.</figcaption>  
+              </div>
+              
+              <div id="highlight" class="subgroup">
+              <h4>Highlight Reel</h4> 
+               <div class="subgroup">
+                 <video class="img-responsive full-img-video" controls>
+                   <source src="../../assets/nasa/nasa-project/cut-bg-nasa-highlight-reel.mp4">
+                 </video>
+               </div>
+              </div>
+
+
+            </section>
+          </div>
+
+
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <div class="section-divider">
+              <div class="dot1">
+              </div>
+              <div class="dot2">
+              </div>
+              <div class="dot3">
+              </div>
+            </div>
+  
+            <section id="impactoutcome" class="group" >
+              <h3>Impact & Outcome</h3>
+              <hr>
+            </section>
+          </div>
+          
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <section id="solution" class="group" >
+
+              <div id="impact" class="subgroup">
+                <h4>Impact of Robo Run</h4>
+                 <p class="small-margin-bottom">
+                  One of the biggest goals of NASA researchers was to have a complex simulation that also had "perfect UX". With my amazing teammates, <span class="highlight highlight-nasa">we were able to create a simulation that had "perfect UX", meaning astronauts did not get challenged by the user-interface/user experience but were challenged with the system and mechanics of the simulation, something NASA researchers were deperately lacking. </span>
+                </p>
+                <p class="small-margin-bottom">The following quote is from the same researcher who initially emphasized the need for a complex system and flawless UX for NASA's next simulation, after seeing the final product of Robo Run:
+                </p>
+                <br><br>
+                <img class="img-responsive full-img"src="../../assets/nasa/nasa-project/quote-2.png" data-aos="fade-up" data-aos-duration="600"> 
+                <br><br>
+              </div>
+
+              <div id="outcome" class="subgroup">
+                <h4>Outcome</h4>
+                <p class="small-margin-bottom">
+                  There were a lot of great outcomes from Robo Run and some of the notable ones were:</span>
+                </p>
+                <h5 class="nasa-h5">Created the first "perfect ux" simulation at NASA that is currently being used.</h5>
+                <br>
+                <h5 class="nasa-h5">Reduced task-error rates with simulations by 19% with robo-run.</h5>
+                <br>
+                <h5 class="nasa-h5">Robo-Run simulation was awarded $200k+ in funding to be used for testing with astronauts. </h5>
+                <br>
+                <h5 class="nasa-h5">Saved NASA researchers 13 months and more than $500k+ in developmental costs by creating Robo Run.</h5>
+              </div>
+            </section>
+          </div>
+
+
+          <!-- <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+
+            <div class="section-divider">
+              <div class="dot1">
+              </div>
+              <div class="dot2">
+              </div>
+              <div class="dot3">
+              </div>
+            </div>
+
+            <section id="highlight" class="group" >
+              <h3>Highlight Reel</h3>
+              <hr>
+              <div class="subgroup">
+                <video class="img-responsive full-img-video" controls>
+                  <source src="../../assets/nasa/bg-nasa-highlight-reel.mp4">
+                </video>
+              </div>
+            </section>
+          </div> -->
+        
+          
+    
+
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+          <div class="section-divider">
+            <div class="dot1">
+            </div>
+            <div class="dot2">
+            </div>
+            <div class="dot3">
+            </div>
+          </div>
+
+            <section id="reflection" class="group">
+              <div data-aos="fade-up" data-aos-duration="600">
+              <h3>Reflection</h3>
+              <hr>
+                <div class="subgroup">
+                  <p class="small-margin-bottom">This project was an incredible journey, spanning seven months.<span class="highlight highlight-nasa">I'd like to take a moment to express my gratitude to those who made this project possible—my managers at Ames, Katie McTigue and Katelyn Duncan!</span> I learned so much about team management, the user-experience journey, ANOMALIES and solving a problem that's quite literally out of this planet.
+                  </p>
+                  <p class="small-margin-bottom">
+                    <span class="highlight highlight-nasa">Of course we can't forget my awesome team members! Thank you all for being amazing!</span>
+                  </p>
+                  <img class="img-responsive full-img"src="../../assets/nasa/theteam.jpg" data-aos="fade-up" data-aos-duration="600"> 
+                </div>
+              </div>
+            </section>
+          </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <a href="" id="template-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+    <div class="container-fluid">
+      <div class="row footer-row">
+        <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p class="footer-text"></p>
+        </div>
+        <div class="footer-icons col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p>
+            <a href="https://www.linkedin.com/in/farhanahmed45/" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+            <a href="mailto:kaizufarhan@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+
+</html>
